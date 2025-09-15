@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Áo phông Basic",
+    "price": 199000,
+    "image": "images/product1.jpg",
+    "description": "Áo phông thoáng mát, phù hợp mọi ngày."
+  },
+  {
+    "id": 2,
+    "name": "Váy xòe Hàn Quốc",
+    "price": 499000,
+    "image": "images/product2.jpg",
+    "description": "Váy nữ tính, phong cách Hàn Quốc."
+  },
+  {
+    "id": 3,
+    "name": "Giày sneaker thời trang",
+    "price": 759000,
+    "image": "images/product3.jpg",
+    "description": "Giày êm, điệuệt cho phong cách trẻ trung."
+  }
+]

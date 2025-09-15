@@ -1,0 +1,12 @@
+{
+  "name": "ecommerce-demo",
+  "version": "1.0.0",
+  "description": "Simple e-commerce frontend demo served by Node/Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
