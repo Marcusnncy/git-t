@@ -11,4 +11,4 @@ COPY . .
 # Mở cổng 3000
 EXPOSE 3000
 # Lệnh chạy ứng dụng1111
-CMD ["node", "app.js"] (app.js thay bằng file chính vd: index.js)
+CMD ["node", "app.js"]
