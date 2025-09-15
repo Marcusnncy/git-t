@@ -36,3 +36,8 @@ jobs:
           context: . # Thư mục chứa Dockerfile
           push: true # Đẩy image lên Docker Hub
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-demo:latest
+          
+      - name: Trigger Render deployment
+        if: github.event_name == 'push'
+        run: |
+          curl -X POST ${{ secrets.RENDER_DEPLOY_HOOK }}
