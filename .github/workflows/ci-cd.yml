@@ -35,4 +35,4 @@ jobs:
         with:
           context: .                # Thư mục chứa Dockerfile
           push: true                # Đẩy image lên Docker Hub
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-demo:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-ci-cd-demo:latest
