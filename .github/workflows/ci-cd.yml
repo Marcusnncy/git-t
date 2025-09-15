@@ -1,17 +1,17 @@
 name: CI/CD Pipeline
 
-# Khi nào chạy workflow? 
+# Khi nào chạy workflow?
 on:
   push:
     branches:
-      - main       # chạy khi push code lên nhánh main
+      - main # chạy khi push code lên nhánh main
   pull_request:
     branches:
-      - main       # chạy khi có pull request vào nhánh main
+      - main # chạy khi có pull request vào nhánh main
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest   # GitHub sẽ tạo 1 máy ảo Ubuntu để chạy
+    runs-on: ubuntu-latest # GitHub sẽ tạo 1 máy ảo Ubuntu để chạy
 
     steps:
       # 1. Lấy source code từ repo
@@ -33,6 +33,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          context: .                # Thư mục chứa Dockerfile
-          push: true                # Đẩy image lên Docker Hub
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-ci-cd-demo:latest
+          context: . # Thư mục chứa Dockerfile
+          push: true # Đẩy image lên Docker Hub
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ecommerce-demo:latest

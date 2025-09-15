@@ -10,5 +10,5 @@ RUN npm install
 COPY . .
 # Mở cổng 3000
 EXPOSE 3000
-# Lệnh chạy ứng dụng
+# Lệnh chạy ứng dụng11
 CMD ["node", "app.js"] (app.js thay bằng file chính vd: index.js)
